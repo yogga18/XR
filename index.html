@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accsess Web Cam</title>
 </head>
+<style>
+    .input{
+        margin: "10px auto";
+    }
+</style>
 <body>
     <!-- Frame Webcam -->
-    <video id="preview"></video>
-
-    <!-- Display image -->
-    <canvas id="output"></canvas>
+    <div class="input">
+        <h1>Input</h1>
+        <video id="preview"></video>
+    </div>
 
     <!-- Button Capture -->
     <button type="button" id="capture">Take a Picture</button>
+
+    <!-- Display image -->
+    <div>
+        <h1>Output</h1>
+        <canvas id="output"></canvas>
+    </div>
 
     <script>
         const [preview, output] = [
